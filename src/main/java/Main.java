@@ -46,9 +46,7 @@ public class Main {
                         String holidayName = (String) ((JSONObject) ((JSONArray) holidayInfo.get("name")).get(0)).get("text");
                         String holidayDate = (String) holidayInfo.get("startDate");
                         System.out.println("Holiday name: " + holidayName + ", Date: " + holidayDate);
-                        break;
-                    }else{
-                        System.out.println("Error: Response code " + responseCode);
+
                     }
                 }
             }
@@ -57,3 +55,4 @@ public class Main {
         }
     }
 }
+
