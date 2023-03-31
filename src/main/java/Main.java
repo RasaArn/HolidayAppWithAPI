@@ -39,7 +39,7 @@ public class Main {
                     while (scanner.hasNext()) {
                         holidayInformationString.append(scanner.nextLine());
                     }
-
+                    scanner.close(); // closing scanner
 
                     //System.out.println(holidayInformationString); - data from API array to String. Print out to check what we get
                     try{
